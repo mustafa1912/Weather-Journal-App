@@ -1,0 +1,106 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-size: cover;
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(50, auto);
+    /* grid-template-columns:  */
+    height: 100vh;
+    color: #ffffff;
+    justify-content: center;
+    grid-gap: 1em;
+    width: 85%;
+    margin: 50px auto auto auto;
+}
+
+.entry {
+    background: rgba(59, 74, 107, .4);
+    padding: 15px 20px;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+.section {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+}
+
+input {
+    width: 700px;
+    display: block;
+    height: 40px;
+    padding: 10px 15px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    width: 700px;
+    height: 70px;
+    background: #0D6EFD;
+    color: #f1f1f1;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0668fc;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    width: 700px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Style for Placeholder Text*/
+
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #0D6EFD;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #0D6EFD;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #0D6EFD;
+}
